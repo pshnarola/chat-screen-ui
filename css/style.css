@@ -661,6 +661,7 @@ span.status.active {
         color: #888;
         font-size: 16px;
         font-weight: 500;
+        text-decoration: none;
     }
 
     a.backarrow i {
