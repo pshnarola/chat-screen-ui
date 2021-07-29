@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="css/all.min.css" rel="stylesheet">
+  <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/brands.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="headerbar">
+      <div class="headerbar-left">
+        <div class="header-nav-brand">
+          <a href="#">
+            <img src="images/logo.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="headerbar-right">
+        <ul class="header-nav header-nav-options">
+          <li>
+            <a href="#"><i class="far fa-envelope"></i><span class="count">5</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-bell"></i><span class="count">5</span></a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="p-img">
+                  <img src="images/p.jpg"/>
+                </span>
+                <span class="name">Bold Masi</span><i class="fal fa-chevron-down"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="menubar" id="menubar">
+    <div class="nano">
+      <div class="nano-content">
+        <ul id="main-menu" class="gui-controls">
+          <li>
+            <a href="#">
+              <span class="gui-icon"><i class="fas fa-th"></i></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <span class="gui-icon"><i class="far fa-comment-alt-lines"></i></span>
+              <span class="title">Chat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="gui-icon"><i class="far fa-share-alt"></i></span>
+              <span class="title">Chat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="gui-icon"><i class="fal fa-fan"></i></span>
+              <span class="title">Chat</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="gui-icon"><i class="fas fa-align-left"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <section class="chat-section">
+      <div class="section-body">
+        <div class="chat-wrapper">
+          <div class="chat-search">
+            <form>
+              <div class="form-group">
+                <label>Search Messsages</label>
+                <div class="relative">
+                  <i class="fas fa-search"></i>
+                  <input class="form-control" placeholder="Type & Hit Enter..." type="text" />
+                </div>
+              </div>
+            </form>
+            <hr/>
+            <div class="user-chat">
+              <div class="head">
+                <h5>Recent Talks</h5>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All <i class="fal fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <ul class="user-listing">
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li class="selected">
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="u-item">
+                      <div class="user-img">
+                          <div class="img">
+                            <img src="images/p.jpg"/>
+                          </div>
+                          <span class="status active"></span>
+                      </div>
+                      <div class="p-content">
+                        <h5>Hero Alam</h5>
+                        <p>Can you please send me</p>
+                        <span>02:20 PM</span>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-screen">
+              <div class="screen-head">
+                <div class="user">
+                  <div class="img">
+                    <img src="images/p.jpg"/>
+                  </div>
+                  <div class="p-content">
+                    <h5>Hero Alam</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="message-text-wrap">
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="message-item right">
+                    <div class="message">
+                        <div class="img">
+                      <img src="images/p.jpg"/>
+                    </div>
+                    <div class="p-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      <span>02:20 PM<i class="fas fa-check"></i></span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="screen-foot">
+                <div class="attechment">
+                  <a href="#"><i class="fal fa-paperclip"></i></a>
+                </div>
+                <div class="emoji">
+                  <a href="#"><i class="far fa-smile"></i></a>
+                </div>
+                <div class="typing">
+                  <input type="text" placeholder="Type a message...">
+                  <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
