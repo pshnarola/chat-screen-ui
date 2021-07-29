@@ -17,6 +17,34 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript">
+      $(document).ready(function(){
+        $(".side-toggle").click(function(){
+          $("body").addClass("sideopen");
+        });
+        $(".close-toggle").click(function(){
+          $("body").removeClass("sideopen");
+        });
+      });
+  </script> -->
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $(".user-listing li").click(function(){
+          $("body").addClass("chatbody");
+        });
+        $(".backarrow").click(function(){
+          $("body").removeClass("chatbody");
+        });
+      });
+      var height = 0;
+      $('.message-text-wrap .message-item').each(function(i, value){
+          height += parseInt($(this).height());
+      });
+
+      height += '';
+
+      $('.message-text-wrap').animate({scrollTop: height});
+  </script>
 </head>
 <body>
   <header id="header">
@@ -83,9 +111,14 @@
               <span class="title">Chat</span>
             </a>
           </li>
-          <li>
+          <li class="side-toggle">
             <a href="#">
               <span class="gui-icon"><i class="fas fa-align-left"></i></span>
+            </a>
+          </li>
+          <li class="close-toggle">
+            <a href="#">
+              <span class="gui-icon"><i class="far fa-long-arrow-left"></i></span>
             </a>
           </li>
         </ul>
@@ -396,6 +429,7 @@
             </div>
           </div>
           <div class="chat-body">
+            <a href="#" class="backarrow"><i class="far fa-chevron-left"></i>Back</a>
             <div class="chat-screen">
               <div class="screen-head">
                 <div class="user">
